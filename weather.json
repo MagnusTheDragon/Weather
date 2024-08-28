@@ -82,7 +82,7 @@
         "day":"søndag",
         "image": "img/sne",
         "temperature": {
-            "high": 3,
+            "high": 1,
             "low": -4
         },
         "conditions": "Sne",

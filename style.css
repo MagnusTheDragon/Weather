@@ -12,7 +12,7 @@
 
     --hoverPrimary:#e1e1e1;
     --hoverSecondary:#cecece;
-    --hoverTime: 150ms;
+    --hoverTime: 200ms;
     
 }
 /* Imports */
@@ -22,6 +22,13 @@
 /* Main Styling */
 h1{font-family: "Roboto Mono", monospace;}
 p{font-family: "Raleway", sans-serif;}
+
+
+
+img:hover {
+    transition-duration: 2s;
+    transform: rotate(360deg);
+}
 
 /* Today Weather Div */
 .weatherDiv {
@@ -65,3 +72,39 @@ p{font-family: "Raleway", sans-serif;}
     background-color: var(--hoverSecondary);
     transition-duration: var(--hoverTime);
 }
+
+.otherDates{
+    background-color: var(--boxPrimary);
+    border: 1px solid var(--borders);
+    padding: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2rem 2rem; 
+    grid-template-areas: 
+      "mandag tirsdag onsdag ."
+      "torsdag fredag lørdag søndag"; 
+    justify-content: space-between; 
+}
+
+.otherDates div{
+    background-color: var(--boxSecondart);
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    padding: 1rem;
+}
+.otherDates div:hover{
+    background-color: var(--hoverSecondary);
+    transition-duration: var(--hoverTime);
+}
+.mandag { grid-area: mandag; }
+.tirsdag { grid-area: tirsdag; }
+.onsdag { grid-area: onsdag; }
+.torsdag { grid-area: torsdag; }
+.fredag { grid-area: fredag; }
+.lørdag { grid-area: lørdag; }
+.søndag { grid-area: søndag; }

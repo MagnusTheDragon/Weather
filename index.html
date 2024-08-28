@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dagens Vejr</title>
     <script src="weather.js" defer></script>
+    <script src="rotate.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CurrentWeatherDiv -->
     <div id="weatherDiv" class="weatherDiv">
         <div id="basic" class="basic"></div>
         <div id="extra" class="extra"></div>
     </div>
 
-
+    <!-- OtherWeathersDiv -->
+    <div id="otherDates" class="otherDates">
+        <div id="mandag" class="mandag">mandag</div>
+        <div id="tirsdag" class="tirsdag">tirdag</div>
+        <div id="onsdag" class="onsdag">onsdag</div>
+        <div id="torsdag" class="torsdag">torsdag</div>
+        <div id="fredag" class="fredag">fredag</div>
+        <div id="lørdag" class="lørdag">lørdag</div>
+        <div id="søndag" class="søndag">søndag</div>
+    </div>
 </body>
 </html>
